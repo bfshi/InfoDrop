@@ -34,7 +34,7 @@ Once downloaded, move it into models/pretrained/alexnet_caffe.pth.tar
 
 Commands for running experiments with different source/target domains are listed in `scripts`. 
 
-You can change the hyperparameters for InfoDrop in `models/resnet.py`. (L34-35 and L48-51)
+You can change the hyperparameters for InfoDrop in `models/resnet.py`. (L33-34 and L47-52)
 
 For example, train a model (w/ InfoDrop) with sketch as source domain and photo as target domain, first run:
 
@@ -42,7 +42,7 @@ For example, train a model (w/ InfoDrop) with sketch as source domain and photo 
 python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source sketch --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
 ```
 
-then remove InfoDrop (turn the `finetune_wo_infodrop` on in L35 of `models/resnet.py`), and finetune:
+then remove InfoDrop (turn the `finetune_wo_infodrop` on in L34 of `models/resnet.py`), and finetune:
 
 ```
 python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source sketch --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 20 --checkpoint [PATH TO CHECKPOINT]
