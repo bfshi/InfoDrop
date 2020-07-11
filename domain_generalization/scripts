@@ -1,0 +1,122 @@
+# train w/o jigsaw puzzle
+# photo -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# cartoon -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# art_painting -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source art_painting --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo -> cartoon
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo --target cartoon --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# art_painting -> cartoon
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source art_painting --target cartoon --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# sketch -> cartoon
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source sketch --target cartoon --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# cartoon -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# sketch -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source sketch --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# cartoon -> photo
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# art_painting -> photo
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source art_painting --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# sketch -> photo
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source sketch --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+
+
+
+
+
+
+
+
+
+# train w/o jigsaw puzzle
+# photo cartoon -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo art_painting -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo art_painting --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# cartoon art_painting -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon art_painting --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo cartoon art_painting -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon art_painting --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+
+
+# train w/o jigsaw puzzle
+# photo cartoon -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo sketch -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo sketch --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# cartoon sketch -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon sketch --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle
+# photo cartoon sketch -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon sketch --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+
+
+# train w/o jigsaw puzzle
+# photo art_painting sketch -> cartoon
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo art_painting sketch --target cartoon --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+
+
+# train w/o jigsaw puzzle
+# cartoon art_painting sketch -> photo
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network resnet18 --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon art_painting sketch --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 222 --classify_only_sane --epochs 100
+
+
+
+
+
+# train w/o jigsaw puzzle (alexnet-caffe)
+# photo cartoon art_painting -> sketch
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network caffenet --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon art_painting --target sketch --jig_weight 0.0 --bias_whole_image 0.9 --image_size 225 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle (alexnet-caffe)
+# photo cartoon sketch -> art_painting
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network caffenet --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo cartoon sketch --target art_painting --jig_weight 0.0 --bias_whole_image 0.9 --image_size 225 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle (alexnet-caffe)
+# photo art_painting sketch -> cartoon
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network caffenet --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source photo art_painting sketch --target cartoon --jig_weight 0.0 --bias_whole_image 0.9 --image_size 225 --classify_only_sane --epochs 100
+
+# train w/o jigsaw puzzle (alexnet-caffe)
+# cartoon art_painting sketch -> photo
+python train_jigsaw.py --batch_size 128 --n_classes 7 --learning_rate 0.001 --network caffenet --val_size 0.1 --folder_name test --jigsaw_n_classes 30 --train_all --min_scale 0.8 --max_scale 1.0 --random_horiz_flip 0.5 --jitter 0.4 --tile_random_grayscale 0.1 --source cartoon art_painting sketch --target photo --jig_weight 0.0 --bias_whole_image 0.9 --image_size 225 --classify_only_sane --epochs 100
