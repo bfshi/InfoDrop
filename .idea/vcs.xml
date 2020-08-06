@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CloserLookFewShot" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/domain_generalization" vcs="Git" />
   </component>
 </project>
