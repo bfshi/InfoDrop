@@ -1,4 +1,4 @@
-# A Closer Look at Few-shot Classification
+# Few-shot Classification
 
 This repo is based on the [official code](https://github.com/wyharveychen/CloserLookFewShot) for the paper [A Closer Look at Few-shot Classification](https://openreview.net/pdf?id=HkxLXnAcFQ) (ICLR 2019). 
 
