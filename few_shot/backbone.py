@@ -111,7 +111,7 @@ def random_sample(prob, sampling_num):
 dropout_layers = 2
 finetune_wo_infodrop = False  # when finetuning without InfoDrop, turn this on
 
-class Info_Dropout(nn.Module):  # slow version
+class Info_Dropout(nn.Module):
     def __init__(self, indim, outdim, kernel_size, stride=1, padding=0,
                  dilation=1, groups=1, if_pool=False, pool_kernel_size=2, pool_stride=None,
                  pool_padding=0, pool_dilation=1):
