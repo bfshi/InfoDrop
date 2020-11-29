@@ -5,5 +5,3 @@ Code for our paper ["Informative Dropout for Robust Representation Learning: A S
 This repo contains codes for 
 + Domain Generalization
 + Few-shot Classification
-+ Random Image Corruption (TBA)
-+ Adversarial Perturbation (TBA)
